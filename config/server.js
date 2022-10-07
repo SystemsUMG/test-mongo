@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-// app.use(express.json());
+app.use(express.json());
 
 //Conexion a Base de Datos
 const db = config.get('mongoURI');
